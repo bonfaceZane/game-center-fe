@@ -7,6 +7,9 @@
   },
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
   "defaultBase": "master",
+  "cli": {
+    "packageManager": "bun"
+  },
   "plugins": [
     {
       "plugin": "@nx/expo/plugin",
@@ -18,8 +21,8 @@
         "installTargetName": "install",
         "exportTargetName": "export",
         "submitTargetName": "submit",
-        "runIosTargetName": "run-ios",
-        "runAndroidTargetName": "run-android"
+        "runIosTargetName": "ios",
+        "runAndroidTargetName": "android"
       }
     },
     {
@@ -29,8 +32,8 @@
         "upgradeTargetName": "update",
         "bundleTargetName": "bundle",
         "podInstallTargetName": "pod-install",
-        "runIosTargetName": "run-ios",
-        "runAndroidTargetName": "run-android",
+        "runIosTargetName": "ios",
+        "runAndroidTargetName": "android",
         "buildIosTargetName": "build-ios",
         "buildAndroidTargetName": "build-android",
         "syncDepsTargetName": "sync-deps"

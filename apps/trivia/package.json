@@ -9,9 +9,32 @@
     "react-native": "*",
     "expo": "*",
     "react-native-svg": "*",
-    "react-native-web": "*"
+    "react-native-web": "*",
+    "react": "18.2.0",
+    "@nx/eslint-plugin": "*",
+    "jest-expo": "*",
+    "tslib": "*",
+    "@nx/js": "*",
+    "@nx/web": "*",
+    "@nx/jest": "*",
+    "@nx/react": "*",
+    "@nx/devkit": "*",
+    "@nx/eslint": "*",
+    "node-fetch": "*",
+    "picocolors": "*",
+    "@nx/webpack": "*",
+    "metro-resolver": "*",
+    "tsconfig-paths": "*",
+    "enhanced-resolve": "*",
+    "@expo/metro-config": "*",
+    "react-native-svg-transformer": "*"
   },
   "scripts": {
-    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/trivia"
+    "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/trivia",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "devDependencies": {
+    "expo-atlas": "^0.3.0"
   }
 }
