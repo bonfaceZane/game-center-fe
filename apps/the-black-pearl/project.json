@@ -1,9 +1,9 @@
 {
-  "name": "pearl",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/the-black-pearl",
-  "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project the-black-pearl --web",
-  "targets": {}
+    "name": "pearl",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/the-black-pearl",
+    "projectType": "application",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project the-black-pearl --web",
+    "targets": {}
 }
