@@ -6,11 +6,6 @@ import { ThemedText } from '@/components/ThemedText'
 import { ThemedView } from '@/components/ThemedView'
 
 export default function HomeScreen() {
-    const timer_check = {
-        first_name: 'bonface',
-        last_name: 'zane',
-    }
-
     return (
         <ParallaxScrollView
             headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}

@@ -4,6 +4,7 @@ import React from 'react'
 import { Colors } from '@/constants/Colors'
 import { useColorScheme } from '@/hooks/useColorScheme'
 import { SymbolView } from 'expo-symbols'
+import type { title } from 'process'
 
 export default function TabLayout() {
     const colorScheme = useColorScheme()
@@ -14,13 +15,14 @@ export default function TabLayout() {
                 tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
                 headerShown: false,
             }}
+            initialRouteName="play"
         >
             <Tabs.Screen
-                name="play"
+                name="index"
                 options={{
                     title: 'play',
                     tabBarIcon: ({ color, focused }) => (
-                        <SymbolView name="livephoto.play" />
+                        <SymbolView name="livephoto.play" tintColor={color} />
                     ),
                 }}
             />
@@ -29,7 +31,19 @@ export default function TabLayout() {
                 options={{
                     title: 'players',
                     tabBarIcon: ({ color, focused }) => (
-                        <SymbolView name="person.2.crop.square.stack" />
+                        <SymbolView
+                            name="person.2.crop.square.stack"
+                            tintColor={color}
+                        />
+                    ),
+                }}
+            />
+            <Tabs.Screen
+                name="results"
+                options={{
+                    title: 'results',
+                    tabBarIcon: ({ color, focused }) => (
+                        <SymbolView name="sum" tintColor={color} />
                     ),
                 }}
             />
