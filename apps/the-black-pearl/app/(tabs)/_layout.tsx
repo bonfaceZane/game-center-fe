@@ -1,9 +1,9 @@
 import { Tabs } from 'expo-router';
 import React from 'react';
 
-import { TabBarIcon } from '@/components/navigation/TabBarIcon';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import { SymbolView } from 'expo-symbols';
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -16,30 +16,23 @@ export default function TabLayout() {
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="play"
         options={{
-          title: 'Home',
+          title: 'play',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? 'home' : 'home-outline'}
-              color={color}
-            />
+            <SymbolView name="livephoto.play" />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="players"
         options={{
-          title: 'Explore',
+          title: 'players',
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? 'code-slash' : 'code-slash-outline'}
-              color={color}
-            />
+            <SymbolView name="person.2.crop.square.stack" />
           ),
         }}
       />
     </Tabs>
   );
 }
-import type { title } from 'process';
