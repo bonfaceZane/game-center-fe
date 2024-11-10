@@ -6,6 +6,8 @@
   "scripts": {
     "eas-build-post-install": "cd ../../ && node tools/scripts/eas-build-post-install.mjs . apps/the-black-pearl",
     "android": "expo run:android",
+    "fmt": "prettier . --write",
+    "prepare": "husky"
   },
   "dependencies": {
     "@testing-library/jest-native": "*",
@@ -27,6 +29,11 @@
     "react-native-web": "*"
   },
   "devDependencies": {
-    "expo-atlas": "^0.3.0"
+    "expo-atlas": "^0.3.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
