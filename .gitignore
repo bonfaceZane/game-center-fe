@@ -12,10 +12,8 @@ node_modules
 
 .env
 
-# Expo
 node_modules/
 .expo/
-.yarn/
 dist/
 npm-debug.*
 *.jks
@@ -25,4 +23,6 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
-cache/
+
+# macOS
+.DS_Store

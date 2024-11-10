@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "TheBlackPearl",
+    "scheme": "the-black-pearl",
     "slug": "the-black-pearl",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -22,14 +23,28 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro",
+      "output": "static"
     },
-    "plugins": []
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "expo": {
+      "doctor": {
+        "reactNativeDirectoryCheck": {
+          "exclude": []
+        }
+      },
+      "newArchEnabled": true
+    }
   }
 }
